@@ -24,5 +24,23 @@
             height: 100%;
             object-fit: contain;
         }
+
+        h2 {
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+            font-family: a.$playfair-display;
+            font-weight: 700;
+            font-size: 120px;
+            line-height: 138px;
+            color: a.$color-white;
+        }
+    }
+
+    &-content{
+        flex: 1.22;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 }
