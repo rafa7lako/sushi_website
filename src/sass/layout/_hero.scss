@@ -42,5 +42,120 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+
+        &-info {
+            padding: 64px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1{
+                font-size: 80px;
+                font-weight: 600;
+                font-family: a.$playfair-display;
+                color: a.$secondary-color;
+            }
+
+            p {
+                margin: 32px 0 0 32px;
+                font-family: a.$plus-jakarta-sans;
+                color: a.$secondary-color;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+
+        &__buttons {
+            margin: 41px 0 0 41px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 36px;
+        }
+
+        &__order-button{
+            padding: 20px;
+            border-radius: 36px;
+            min-width: 212px;
+            outline: transparent;
+            border: transparent;
+            background: a.$secondary-color;
+            cursor: pointer;
+            color: a.$color-white;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        &__play-button {
+            outline: transparent;
+            border: transparent;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 19px;
+            color: a.$black-200;
+            font-family: a.$plus-jakarta-sans;
+            cursor: pointer;
+
+            img {
+                margin-right: 12px;
+                width: 46px;
+                height: 46px;
+                object-fit: contain;
+            }
+        }
+
+        &__testimonial{
+            padding: 32px 64px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: a.$color-white;
+        }
+
+        &__customer{
+            flex: 1;
+            gap: 10px;
+
+            h4{
+               font-size: 64px; 
+               font-weight: 400;
+               font-family: a.$playfair-display;
+            }
+            p{
+               font-size: 18px; 
+               font-weight: 400;
+               font-family: a.$plus-jakarta-sans;
+               color: a.$secondary-color;
+               opacity: .5;
+            }
+        }
+
+        &__review{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 20px;
+            border-left: 1px solid rgba(2,2,2, .1);
+            min-width: 200px;
+
+            img{
+                width: 42px;
+                height: 42px;
+                object-fit: contain;
+            }
+
+            p{
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 32px;
+                font-family: a.$plus-jakarta-sans;
+                color: a.$secondary-color;
+                opacity: .8;
+            }
+        }
     }
 }
