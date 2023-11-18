@@ -29,6 +29,7 @@
     "sass": "^1.62.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "browser-sync": "^2.29.1"
   }
 }
