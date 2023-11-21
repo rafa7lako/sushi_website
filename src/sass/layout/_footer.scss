@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as a;
+
+.footer {
+    width: 100%;
+    padding: 20px 40px;
+
+    background: a.$color-white;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: a.$playfair-display;
+        text-transform: uppercase;
+        color: a.$secondary-color;
+        cursor: pointer;
+
+        span {
+            color: a.$primary-color;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 64px;
+    }
+
+    ul:last-child {
+        gap: 32px;
+    }
+
+    &__nav {
+        li {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: a.$plus-jakarta-sans;
+            text-transform: uppercase;
+            color: a.$secondary-color;
+            cursor: pointer;
+        }
+    }
+
+    &__social {
+        li {
+            width: 42px;
+            height: 42px;
+            background-color: a.$secondary-color;
+            border-radius: 100%;
+
+            img {
+                width: 45%;
+                height: 45%;
+
+                object-fit: contain;
+            }
+        }
+    }
+}
