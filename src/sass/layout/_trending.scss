@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as a;
+@use "../abstracts/variables" as a;
 
 .trending {
 	position: relative;
@@ -12,7 +12,7 @@
 
 	&-sushi,
 	&-drink {
-		width: 10%;
+		width: 100%;
 		min-height: 640px;
 		display: flex;
 		flex-direction: row;
@@ -42,23 +42,23 @@
 		}
 	}
 
-    &__icon {
-        width: 24px;
-        height: 24px;
+	&__icon {
+		width: 24px;
+		height: 24px;
 
-        background-color: a.$primary-color;
-        border-radius: 100px;
+		background-color: a.$primary-color;
+		border-radius: 100px;
 
 		img {
 			width: 50%;
 			height: 50%;
 			object-fit: contain;
 		}
-    }
+	}
 
-	&__list{
-		p{
-			flex:1;
+	&__list {
+		p {
+			flex: 1;
 			font-size: 16px;
 			font-weight: 500;
 			font-family: a.$plus-jakarta-sans;
@@ -67,7 +67,7 @@
 	}
 
 	&__image {
-		flex:1;
+		flex: 1;
 
 		position: relative;
 		padding: 32px 64px;
@@ -84,6 +84,76 @@
 		}
 	}
 
+	&__arrow {
+		position: absolute;
+		z-index: 1;
+
+		img {
+			object-fit: contain;
+		}
+
+		&-left {
+			left: -2.5px;
+			top: 12%;
+
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+
+		&-top {
+			top: -10.5px;
+			left: 12%;
+
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+
+		&-bottom {
+			bottom: -6.5px;
+			right: 12%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&-right {
+			right: -2.5px;
+			bottom: 12%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&__discover {
+		position: absolute;
+		top: 44%;
+		left: 44%;
+		z-index: 1;
+		width: 160px;
+		height: 160px;
+		background-color: a.$secondary-color;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		p{
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 500;
+			font-family: a.$plus-jakarta-sans;
+		}
+	}
 }
 
 .trending-sushi .trending__image {
